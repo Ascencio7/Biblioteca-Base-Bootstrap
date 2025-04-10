@@ -1,0 +1,63 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #383c44;
+}
+
+.navbar{
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.breadcrumb{
+    background-color: transparent;
+    padding: 0.75rem 0;
+}
+
+.article-header{
+    margin-bottom: 2rem;
+}
+
+.article-quote{
+    font-style: italic;
+    color: #555;
+    border-left: 3px solid #ddd;
+    padding-left: 1rem;
+    margin: 1.5rem 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    color: #A9BCF5;
+}
+
+h1, p{
+    color: white;
+    text-align: justify;
+}
+
+.breadcrumb-item.active{
+    color: #ffffff;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    content: ">" !important;  /* Cambia el símbolo */
+    padding: 0 0.5rem;         /* Ajusta el espaciado */
+    color: #ffffff;           /* Color del separador */
+}
+
+.dropdown-item:hover{
+    background-color: #000;
+    color: #ffffff;
+}
+
+/* Línea divisoria que abarca todo el ancho */
+.full-width-divider {
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    border-top: 1px solid #dee2e6;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biblioteca Nacional</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="/css/biblio.css">
+
+</head>
+
+<body>
+
+  <!-- Barra de navegacion con el titulo-->
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark py-0">
+    <div class="container-fluid flex-column">
+      
+      <div class="w-100 py-3"> <!-- bg-secondary es el gris de Bootstrap -->
+        <div class="container text-center">
+          <a class="navbar-brand fs-1 fw-bold text-white" href="#">BIBLIOTECA NACIONAL</a>
+        </div>
+
+        <!-- Barra de navegación -->
+        <div class="w-100 border-top">
+          <button class="navbar-toggler mx-auto d-md-none" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarMenu">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Barra de opciones -->
+          <div class="collapse navbar-collapse justify-content-center py-1" id="navbarMenu">
+            <ul class="navbar-nav">
+              <li class="nav-item px-3">
+                <a class="nav-link active" href="#">INICIO</a>
+              </li>
+              <li class="nav-item px-3">
+                <a class="nav-link" href="#">SERVICIOS</a>
+              </li>
+
+              <!-- Menú desplegable "Nuestro Trabajo" -->
+              <li class="nav-item dropdown px-3">
+                <a class="nav-link dropdown-toggle fw-medium" href="#" id="trabajoDropdown" role="button"
+                  data-bs-toggle="dropdown">
+                  NUESTRO TRABAJO
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Proyectos recientes</a></li>
+                  <li><a class="dropdown-item" href="#">Publicaciones</a></li>
+                  <li><a class="dropdown-item" href="#">Investigaciones</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Galería multimedia</a></li>
+                </ul>
+              </li>
+
+              <!-- Menú desplegable "Institución" -->
+              <li class="nav-item dropdown px-3">
+                <a class="nav-link dropdown-toggle fw-medium" href="#" id="institucionDropdown" role="button"
+                  data-bs-toggle="dropdown">
+                  INSTITUCIÓN
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Historia</a></li>
+                  <li><a class="dropdown-item" href="#">Misión y Visión</a></li>
+                  <li><a class="dropdown-item" href="#">Organigrama</a></li>
+                  <li><a class="dropdown-item" href="#">Directorio</a></li>
+                </ul>
+              </li>
+
+              <!-- Menú desplegable "Contactenos" -->
+              <li class="nav-item dropdown px-3">
+                <a class="nav-link dropdown-toggle fw-medium" href="#" id="contactoDropdown" role="button"
+                  data-bs-toggle="dropdown">
+                  CONTACTENOS
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Formulario de contacto</a></li>
+                  <li><a class="dropdown-item" href="#">Horarios y ubicación</a></li>
+                  <li><a class="dropdown-item" href="#">Preguntas frecuentes</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Trabaja con nosotros</a></li>
+                </ul>
+            </ul>
+          </div>
+        </div>
+      </div>
+  </nav>
+
+  <main class="container my-5">
+    <!-- Migas de pan -->
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">Inicio</a></li>
+        <li class="breadcrumb-item"><a href="#">Noticias</a></li>
+        <li class="breadcrumb-item active" aria-current="page">La nueva Biblioteca Nacional de El Salvador y sus
+          servicios para la población</li>
+      </ol>
+    </nav>
+
+
+    <!-- linea  -->
+    <hr class="my-4 border-white">
+
+    <!-- Contenido principal -->
+    <article>
+      <header class="article-header">
+        <h1 class="fw-bold">La nueva Biblioteca Nacional de El Salvador y sus servicios para la población</h1>
+      </header>
+
+      <div class="article-content">
+        <blockquote class="highlight-quote">
+          <p>"La Biblioteca Nacional de El Salvador es un espacio que se convierte en la calidad del conocimiento y del
+            saber, un espacio abierto 24 horas al día", explicó Doradas.</p>
+        </blockquote>
+
+        <p>El Salvador ya cuenta con una nueva Biblioteca Nacional que prestará servicio las 24 horas del día, todos los
+          días del año, lo que le convierte en la primera en el mundo en su forma de gestión.</p>
+
+        <p>Durante el recorrido con el que el presidente Najib Budek inauguró la Biblioteca Nacional, el vicerreciente
+          de Cultura, Eric Doradas, explicó parte de los servicios que esta nueva espalda enfocará a la población en
+          general.</p>
+
+        <p>Según detalle al funcionario, el moderno edificio 5G cuenta con Internet en los sitios reales de los que
+          contar y entrar al servicio de la población sabiamente día a día.</p>
+
+        <p>En el primer nivel, los usuarios encontrarán un lobby o establece tres el cual destaca un mural del maestro
+          Carlos Cañas, una destacada obra de arte de 1960, por lo cual fue rescatado de la antigua edificación para
+          incorporarse a este nuevo edificio.</p>
+      </div>
+      </header>
+    </article>
+  </main>
+
+  <script src="/css/bootstrap-5.3.5-dist/bootstrap-5.3.5-dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
