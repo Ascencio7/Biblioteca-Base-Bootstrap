@@ -61,3 +61,19 @@ h1, p{
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
+
+img{
+    border-bottom: 10px;
+}
+
+.binaes{
+    width: 20%;
+    height: auto;
+    padding: 20px;
+    transition: transform 0.3s;
+}
+
+.binaes:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
