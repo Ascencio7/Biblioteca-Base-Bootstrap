@@ -1,59 +1,86 @@
-body{
+body {
     font-family: 'Times New Roman', Times, serif;
     background-color: #383c44;
+    overflow-x: hidden;
 }
 
-.navbar{
-    background-color: #f8f9fa;
-    border-bottom: 1px solid #dee2e6;
-}
-
-.breadcrumb{
-    background-color: transparent;
-    padding: 0.75rem 0;
-}
-
-.article-header{
-    margin-bottom: 2rem;
-}
-
-.article-quote{
-    font-style: italic;
-    color: #555;
-    border-left: 3px solid #ddd;
-    padding-left: 1rem;
-    margin: 1.5rem 0;
-}
-
-a{
+a {
     text-decoration: none;
 }
 
-a:hover{
+a:hover {
     color: #A9BCF5;
 }
 
-h1, p{
+h1, p {
     color: white;
     text-align: justify;
 }
 
-.breadcrumb-item.active{
-    color: #ffffff;
+/* ===== TÍTULO DE LA BIBLIOTECA ===== */
+.titulo-biblioteca {
+    background-color: #b3aeae;
 }
 
-.breadcrumb-item+.breadcrumb-item::before {
-    content: ">" !important;  /* Cambia el símbolo */
-    padding: 0 0.5rem;         /* Ajusta el espaciado */
-    color: #ffffff;           /* Color del separador */
+.titulo-biblioteca a {
+    color: black;
 }
 
-.dropdown-item:hover{
+/* ===== BARRA DE NAVEGACIÓN ===== */
+.navbar-custom {
+    background-color: #2b303b;
+}
+
+.navbar-custom .nav-link {
+    color: white;
+}
+
+.navbar-custom .nav-link.active,
+.navbar-custom .nav-link:hover,
+.navbar-custom .dropdown-toggle:hover {
+    color: #ddd;
+}
+
+/* Menú desplegable */
+.dropdown-menu {
+    background-color: #f8f9fa;
+}
+
+.dropdown-item {
+    color: #000;
+}
+
+.dropdown-item:hover {
     background-color: #000;
     color: #ffffff;
 }
 
-/* Línea divisoria que abarca todo el ancho */
+/* Migas de pan */
+.breadcrumb {
+    background-color: transparent;
+    padding: 0.75rem 0;
+}
+
+.breadcrumb-item.active {
+    color: #ffffff;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    content: ">";
+    padding: 0 0.5rem;
+    color: #ffffff;
+}
+
+/* Cita del artículo */
+.article-quote {
+    font-style: italic;
+    color: #ccc;
+    border-left: 3px solid #999;
+    padding-left: 1rem;
+    margin: 1.5rem 0;
+}
+
+/* Línea divisoria de ancho completo */
 .full-width-divider {
     width: 100vw;
     margin-left: calc(-50vw + 50%);
@@ -62,15 +89,27 @@ h1, p{
     margin-bottom: 1rem;
 }
 
-.binaes{
+/* Imágenes */
+.binaes {
     border-radius: 15px;
     width: 310px;
     margin: 10px;
-    padding: auto;
     transition: transform 0.3s;
 }
 
-.binaes:hover{
+.binaes:hover {
     transform: scale(1.09);
     cursor: pointer;
+}
+
+.titulo-biblioteca {
+    background-color: #b3aeae;
+    width: 100%;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+
+.titulo-biblioteca a {
+    color: black;
 }

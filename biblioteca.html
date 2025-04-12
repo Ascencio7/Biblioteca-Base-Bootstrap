@@ -10,88 +10,81 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
 
+    <!-- CSS -->
   <link rel="stylesheet" href="/css/biblio.css">
 
 </head>
 
 <body>
 
-  <!-- Barra de navegacion con el titulo-->
-  <nav class="navbar navbar-expand-md navbar-dark bg-dark py-0">
-    <div class="container-fluid flex-column"  >
-      
-      <div class="w-100 py-3"  > <!-- bg-secondary es el gris de Bootstrap -->
-        <div class="container text-center  ">
-          <a class="navbar-brand fs-1 fw-bold text-white" href="#">BIBLIOTECA NACIONAL</a>
-        </div>
+  <!-- Encabezado con fondo gris claro -->
+  <nav class="navbar navbar-expand-md navbar-dark py-0">
+    <div class="container-fluid flex-column px-0">
 
-        <!-- Barra de navegación -->
-        <div class="w-100 border-top">
-          <button class="navbar-toggler mx-auto d-md-none" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarMenu">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+      <!-- Título -->
+      <div class="titulo-biblioteca text-center">
+        <a class="navbar-brand fs-1 fw-bold" href="#">BIBLIOTECA NACIONAL</a>
+      </div>
 
-          <!-- Barra de opciones -->
-          <div class="collapse navbar-collapse justify-content-center py-1" id="navbarMenu">
-            <ul class="navbar-nav">
-              <li class="nav-item px-3">
-                <a class="nav-link active" href="#">INICIO</a>
-              </li>
-              <li class="nav-item px-3">
-                <a class="nav-link" href="#">SERVICIOS</a>
-              </li>
+      <!-- Barra de navegación -->
+      <div class="w-100 border-top navbar-custom">
+        <button class="navbar-toggler mx-auto d-md-none" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarMenu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-              <!-- Menú desplegable "Nuestro Trabajo" -->
-              <li class="nav-item dropdown px-3">
-                <a class="nav-link dropdown-toggle fw-medium" href="#" id="trabajoDropdown" role="button"
-                  data-bs-toggle="dropdown">
-                  NUESTRO TRABAJO
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Proyectos recientes</a></li>
-                  <li><a class="dropdown-item" href="#">Publicaciones</a></li>
-                  <li><a class="dropdown-item" href="#">Investigaciones</a></li>
-                  <li>
-                    <hr class="dropdown-divider">
-                  </li>
-                  <li><a class="dropdown-item" href="#">Galería multimedia</a></li>
-                </ul>
-              </li>
-
-              <!-- Menú desplegable "Institución" -->
-              <li class="nav-item dropdown px-3">
-                <a class="nav-link dropdown-toggle fw-medium" href="#" id="institucionDropdown" role="button"
-                  data-bs-toggle="dropdown">
-                  INSTITUCIÓN
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Historia</a></li>
-                  <li><a class="dropdown-item" href="#">Misión y Visión</a></li>
-                  <li><a class="dropdown-item" href="#">Organigrama</a></li>
-                  <li><a class="dropdown-item" href="#">Directorio</a></li>
-                </ul>
-              </li>
-
-              <!-- Menú desplegable "Contactenos" -->
-              <li class="nav-item dropdown px-3">
-                <a class="nav-link dropdown-toggle fw-medium" href="#" id="contactoDropdown" role="button"
-                  data-bs-toggle="dropdown">
-                  CONTACTENOS
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Formulario de contacto</a></li>
-                  <li><a class="dropdown-item" href="#">Horarios y ubicación</a></li>
-                  <li><a class="dropdown-item" href="#">Preguntas frecuentes</a></li>
-                  <li>
-                    <hr class="dropdown-divider">
-                  </li>
-                  <li><a class="dropdown-item" href="#">Trabaja con nosotros</a></li>
-                </ul>
-            </ul>
-          </div>
+        <div class="collapse navbar-collapse justify-content-center py-1" id="navbarMenu">
+          <ul class="navbar-nav">
+            <li class="nav-item px-3">
+              <a class="nav-link active" href="#">INICIO</a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link" href="#">SERVICIOS</a>
+            </li>
+            <li class="nav-item dropdown px-3">
+              <a class="nav-link dropdown-toggle fw-medium" href="#" data-bs-toggle="dropdown">
+                NUESTRO TRABAJO
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Proyectos recientes</a></li>
+                <li><a class="dropdown-item" href="#">Publicaciones</a></li>
+                <li><a class="dropdown-item" href="#">Investigaciones</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Galería multimedia</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown px-3">
+              <a class="nav-link dropdown-toggle fw-medium" href="#" data-bs-toggle="dropdown">
+                INSTITUCIÓN
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Historia</a></li>
+                <li><a class="dropdown-item" href="#">Misión y Visión</a></li>
+                <li><a class="dropdown-item" href="#">Organigrama</a></li>
+                <li><a class="dropdown-item" href="#">Directorio</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown px-3">
+              <a class="nav-link dropdown-toggle fw-medium" href="#" data-bs-toggle="dropdown">
+                CONTÁCTENOS
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Formulario de contacto</a></li>
+                <li><a class="dropdown-item" href="#">Horarios y ubicación</a></li>
+                <li><a class="dropdown-item" href="#">Preguntas frecuentes</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Trabaja con nosotros</a></li>
+              </ul>
+            </li>
+          </ul>
         </div>
       </div>
+
+    </div>
   </nav>
 
 
@@ -101,6 +94,7 @@
     <img src="/images/binaesImagen3.jpeg" alt="" class="binaes">
   </div>
 
+  
   <main class="container my-5">
     <!-- Migas de pan -->
     <nav aria-label="breadcrumb">
